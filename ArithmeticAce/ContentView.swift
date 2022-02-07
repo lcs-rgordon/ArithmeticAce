@@ -14,7 +14,12 @@ struct ContentView: View {
     let multiplier = Int.random(in: 1...12)
     @State var inputGiven = ""
     
-    // MARK: Computed property
+    // MARK: Computed properties
+    // What is the correct product?
+    var correctProduct: Int {
+        return multiplicand * multiplier
+    }
+    
     var body: some View {
                 
         VStack(spacing: 0) {
@@ -39,6 +44,26 @@ struct ContentView: View {
                           text: $inputGiven)
                     .multilineTextAlignment(.trailing)
             }
+            
+            Button(action: {
+                // Convert the input given to an integer, if possible
+                guard let productGiven = Int(inputGiven) else {
+                    // Sadness, not a number
+                    return
+                }
+
+                // Check the answer!
+                if productGiven == correctProduct {
+                    // Celebrate! 👍🏼
+                } else {
+                    // Sadness, they gave a number, but it's correct 😭
+                }
+            }, label: {
+                Text("Check Answer")
+                    .font(.largeTitle)
+            })
+                .padding()
+                .buttonStyle(.bordered)
             
             Spacer()
         }
