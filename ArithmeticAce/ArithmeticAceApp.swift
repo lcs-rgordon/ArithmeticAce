@@ -11,7 +11,19 @@ import SwiftUI
 struct ArithmeticAceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            TabView {
+                MultiplicationView()
+                    .tabItem {
+                        Image(systemName: "multiply.circle")
+                        Text("Mutiply")
+                    }
+                
+                AdditionView()
+                    .tabItem {
+                        Image(systemName: "plus.circle")
+                        Text("Add")
+                    }
+            }
         }
     }
 }
