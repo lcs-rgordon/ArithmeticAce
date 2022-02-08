@@ -29,7 +29,7 @@ struct ContentView: View {
     }
     
     var body: some View {
-                
+        
         VStack(spacing: 0) {
             HStack {
                 Text("✕")
@@ -48,15 +48,15 @@ struct ContentView: View {
                 ZStack {
                     Image(systemName: "checkmark.circle")
                         .foregroundColor(.green)
-                        //        CONDITION      true  false
+                    //        CONDITION      true  false
                         .opacity(answerCorrect == true ? 1.0 : 0.0)
-
+                    
                     Image(systemName: "x.square")
                         .foregroundColor(.red)
-                        //        CONDITION1         AND     CONDITION2         true  false
-                        //       answerChecked = true     answerCorrect = false
+                    //        CONDITION1         AND     CONDITION2         true  false
+                    //       answerChecked = true     answerCorrect = false
                         .opacity(answerChecked == true && answerCorrect == false ? 1.0 : 0.0)
-
+                    
                     
                 }
                 Spacer()
@@ -65,57 +65,66 @@ struct ContentView: View {
                     .multilineTextAlignment(.trailing)
             }
             
-            Button(action: {
+            ZStack {
                 
-                // Answer has been checked!
-                answerChecked = true
+                Button(action: {
+                    
+                    // Answer has been checked!
+                    answerChecked = true
+                    
+                    // Convert the input given to an integer, if possible
+                    guard let productGiven = Int(inputGiven) else {
+                        // Sadness, not a number
+                        answerCorrect = false
+                        return
+                    }
+                    
+                    // Check the answer!
+                    if productGiven == correctProduct {
+                        // Celebrate! 👍🏼
+                        answerCorrect = true
+                    } else {
+                        // Sadness, they gave a number, but it's correct 😭
+                        answerCorrect = false
+                    }
+                }, label: {
+                    Text("Check Answer")
+                        .font(.largeTitle)
+                })
+                    .padding()
+                    .buttonStyle(.bordered)
+                // Only show this button when an answer has not been checked
+                    .opacity(answerChecked == false ? 1.0 : 0.0)
                 
-                // Convert the input given to an integer, if possible
-                guard let productGiven = Int(inputGiven) else {
-                    // Sadness, not a number
+                Button(action: {
+                    // Generate a new question
+                    multiplicand = Int.random(in: 1...12)
+                    multiplier = Int.random(in: 1...12)
+                    
+                    // Reset properties that track what's happening with the current question
+                    answerChecked = false
                     answerCorrect = false
-                    return
-                }
-
-                // Check the answer!
-                if productGiven == correctProduct {
-                    // Celebrate! 👍🏼
-                    answerCorrect = true
-                } else {
-                    // Sadness, they gave a number, but it's correct 😭
-                    answerCorrect = false
-                }
-            }, label: {
-                Text("Check Answer")
-                    .font(.largeTitle)
-            })
-                .padding()
-                .buttonStyle(.bordered)
-            
-            Button(action: {
-                // Generate a new question
-                multiplicand = Int.random(in: 1...12)
-                multiplier = Int.random(in: 1...12)
-
-                // Reset properties that track what's happening with the current question
-                answerChecked = false
-                answerCorrect = false
+                    
+                    // Reset the input field
+                    inputGiven = ""
+                }, label: {
+                    Text("New question")
+                        .font(.largeTitle)
+                })
+                    .padding()
+                    .buttonStyle(.bordered)
+                // Only show this button when an answer has been checked
+                    .opacity(answerChecked == true ? 1.0 : 0.0)
                 
-                // Reset the input field
-                inputGiven = ""
-            }, label: {
-                Text("New question")
-                    .font(.largeTitle)
-            })
-                .padding()
-                .buttonStyle(.bordered)
+            }
             
-
+            
+            
             Spacer()
         }
         .padding(.horizontal)
         .font(.system(size: 72))
-
+        
         
     }
 }
