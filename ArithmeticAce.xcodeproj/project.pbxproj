@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		812B4B6427B319C5003A469B /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6327B319C5003A469B /* DivisionView.swift */; };
 		81BE3A9427B2DAE800880E99 /* AdditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE3A9327B2DAE800880E99 /* AdditionView.swift */; };
 		81FDA62C27B160FF002471AE /* ArithmeticAceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */; };
 		81FDA62E27B160FF002471AE /* MultiplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDA62D27B160FF002471AE /* MultiplicationView.swift */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		812B4B6327B319C5003A469B /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 		81BE3A9327B2DAE800880E99 /* AdditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionView.swift; sourceTree = "<group>"; };
 		81FDA62827B160FF002471AE /* ArithmeticAce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArithmeticAce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticAceApp.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */,
 				81BE3A9327B2DAE800880E99 /* AdditionView.swift */,
+				812B4B6327B319C5003A469B /* DivisionView.swift */,
 				81FDA62D27B160FF002471AE /* MultiplicationView.swift */,
 				81FDA62F27B16100002471AE /* Assets.xcassets */,
 				81FDA63127B16100002471AE /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81FDA62E27B160FF002471AE /* MultiplicationView.swift in Sources */,
+				812B4B6427B319C5003A469B /* DivisionView.swift in Sources */,
 				81FDA62C27B160FF002471AE /* ArithmeticAceApp.swift in Sources */,
 				81BE3A9427B2DAE800880E99 /* AdditionView.swift in Sources */,
 			);

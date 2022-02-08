@@ -1,5 +1,5 @@
 //
-//  AdditionView.swift
+//  DivisionView.swift
 //  ArithmeticAce
 //
 //  Created by Russell Gordon on 2022-02-08.
@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct AdditionView: View {
+struct DivisionView: View {
     
     // MARK: Stored properties
-    @State var augend = Int.random(in: 1...12)
-    @State var addend = Int.random(in: 1...12)
+    @State var dividend = Int.random(in: 1...12)
+    @State var divisor = Int.random(in: 1...12)
     
     // This string contains whatever the user types in
     @State var inputGiven = ""
@@ -24,21 +24,21 @@ struct AdditionView: View {
     
     // MARK: Computed properties
     // What is the correct product?
-    var correctSum: Int {
-        return augend + addend
+    var correctQuotient: Int {
+        return dividend / divisor
     }
     
     var body: some View {
         
         VStack(spacing: 0) {
             HStack {
-                Text("+")
+                Text("÷")
                 
                 Spacer()
                 
                 VStack(alignment: .trailing) {
-                    Text("\(augend)")
-                    Text("\(addend)")
+                    Text("\(dividend)")
+                    Text("\(divisor)")
                 }
             }
             
@@ -56,10 +56,10 @@ struct AdditionView: View {
                     //        CONDITION1         AND     CONDITION2         true  false
                     //       answerChecked = true     answerCorrect = false
                         .opacity(answerChecked == true && answerCorrect == false ? 1.0 : 0.0)
+                    
+                    
                 }
-                
                 Spacer()
-                
                 TextField("",
                           text: $inputGiven)
                     .multilineTextAlignment(.trailing)
@@ -80,7 +80,7 @@ struct AdditionView: View {
                     }
                     
                     // Check the answer!
-                    if productGiven == correctSum {
+                    if productGiven == correctQuotient {
                         // Celebrate! 👍🏼
                         answerCorrect = true
                     } else {
@@ -98,8 +98,8 @@ struct AdditionView: View {
                 
                 Button(action: {
                     // Generate a new question
-                    augend = Int.random(in: 1...12)
-                    addend = Int.random(in: 1...12)
+                    dividend = Int.random(in: 1...12)
+                    divisor = Int.random(in: 1...12)
                     
                     // Reset properties that track what's happening with the current question
                     answerChecked = false
@@ -129,8 +129,8 @@ struct AdditionView: View {
     }
 }
 
-struct AdditionView_Previews: PreviewProvider {
+struct DivisionView_Previews: PreviewProvider {
     static var previews: some View {
-        AdditionView()
+        DivisionView()
     }
 }
