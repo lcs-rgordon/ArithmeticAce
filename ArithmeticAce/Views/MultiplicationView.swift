@@ -43,35 +43,11 @@ struct MultiplicationView: View {
                         
             ZStack {
                 
-                Button(action: {
-                    
-                    // Answer has been checked!
-                    answerChecked = true
-                    
-                    // Convert the input given to an integer, if possible
-                    guard let productGiven = Int(inputGiven) else {
-                        // Sadness, not a number
-                        answerCorrect = false
-                        return
-                    }
-                    
-                    // Check the answer!
-                    if productGiven == correctProduct {
-                        // Celebrate! 👍🏼
-                        answerCorrect = true
-                    } else {
-                        // Sadness, they gave a number, but it's correct 😭
-                        answerCorrect = false
-                    }
-                }, label: {
-                    Text("Check Answer")
-                        .font(.largeTitle)
-                })
-                    .padding()
-                    .buttonStyle(.bordered)
-                // Only show this button when an answer has not been checked
-                    .opacity(answerChecked == false ? 1.0 : 0.0)
-                
+                CheckAnswerButtonView(inputGiven: $inputGiven,
+                                      answerChecked: $answerChecked,
+                                      answerCorrect: $answerCorrect,
+                                      correctResponse: correctProduct)
+
                 Button(action: {
                     // Generate a new question
                     multiplicand = Int.random(in: 1...12)
