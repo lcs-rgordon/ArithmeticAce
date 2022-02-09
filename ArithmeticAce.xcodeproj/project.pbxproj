@@ -12,10 +12,10 @@
 		8113965C27B3D80C00E5B829 /* QuestionPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113965B27B3D80C00E5B829 /* QuestionPresentationView.swift */; };
 		8113965E27B3DBB200E5B829 /* AnswerAndResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113965D27B3DBB200E5B829 /* AnswerAndResultView.swift */; };
 		8113966027B3E1F200E5B829 /* CheckAnswerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113965F27B3E1F200E5B829 /* CheckAnswerButtonView.swift */; };
+		8113966327B3E4D200E5B829 /* 91726-sad-guy-is-walking.json in Resources */ = {isa = PBXBuildFile; fileRef = 8113966227B3E4D200E5B829 /* 91726-sad-guy-is-walking.json */; };
 		812B4B6427B319C5003A469B /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6327B319C5003A469B /* DivisionView.swift */; };
 		812B4B6E27B34665003A469B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 812B4B6D27B34665003A469B /* Lottie */; };
 		812B4B7027B3467C003A469B /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6F27B3467C003A469B /* LottieView.swift */; };
-		812B4B7227B346D7003A469B /* 7393-fireworks.json in Resources */ = {isa = PBXBuildFile; fileRef = 812B4B7127B346D7003A469B /* 7393-fireworks.json */; };
 		81BE3A9427B2DAE800880E99 /* AdditionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BE3A9327B2DAE800880E99 /* AdditionView.swift */; };
 		81FDA62C27B160FF002471AE /* ArithmeticAceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */; };
 		81FDA62E27B160FF002471AE /* MultiplicationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FDA62D27B160FF002471AE /* MultiplicationView.swift */; };
@@ -29,9 +29,9 @@
 		8113965B27B3D80C00E5B829 /* QuestionPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresentationView.swift; sourceTree = "<group>"; };
 		8113965D27B3DBB200E5B829 /* AnswerAndResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerAndResultView.swift; sourceTree = "<group>"; };
 		8113965F27B3E1F200E5B829 /* CheckAnswerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnswerButtonView.swift; sourceTree = "<group>"; };
+		8113966227B3E4D200E5B829 /* 91726-sad-guy-is-walking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "91726-sad-guy-is-walking.json"; sourceTree = "<group>"; };
 		812B4B6327B319C5003A469B /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 		812B4B6F27B3467C003A469B /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
-		812B4B7127B346D7003A469B /* 7393-fireworks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "7393-fireworks.json"; sourceTree = "<group>"; };
 		81BE3A9327B2DAE800880E99 /* AdditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionView.swift; sourceTree = "<group>"; };
 		81FDA62827B160FF002471AE /* ArithmeticAce.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArithmeticAce.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArithmeticAceApp.swift; sourceTree = "<group>"; };
@@ -75,6 +75,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		8113966127B3E4BE00E5B829 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				8113965527B3474400E5B829 /* 51926-happy.json */,
+				8113966227B3E4D200E5B829 /* 91726-sad-guy-is-walking.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		81FDA61F27B160FF002471AE = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */,
+				8113966127B3E4BE00E5B829 /* Animations */,
 				8113965927B3D7CC00E5B829 /* Views */,
-				812B4B7127B346D7003A469B /* 7393-fireworks.json */,
-				8113965527B3474400E5B829 /* 51926-happy.json */,
 				81FDA62F27B16100002471AE /* Assets.xcassets */,
 				81FDA63127B16100002471AE /* Preview Content */,
 			);
@@ -176,7 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				812B4B7227B346D7003A469B /* 7393-fireworks.json in Resources */,
+				8113966327B3E4D200E5B829 /* 91726-sad-guy-is-walking.json in Resources */,
 				81FDA63327B16100002471AE /* Preview Assets.xcassets in Resources */,
 				8113965627B3474400E5B829 /* 51926-happy.json in Resources */,
 				81FDA63027B16100002471AE /* Assets.xcassets in Resources */,
