@@ -10,8 +10,8 @@ import SwiftUI
 struct SubtractionView: View {
     
     // MARK: Stored properties
-    @State var minuend = Int.random(in: 1...12)
-    @State var subtrahend = Int.random(in: 1...12)
+    @State var minuend = Int.random(in: 1...144)
+    @State var subtrahend = 0
     
     // This string contains whatever the user types in
     @State var inputGiven = ""
@@ -98,9 +98,9 @@ struct SubtractionView: View {
                 
                 Button(action: {
                     // Generate a new question
-                    minuend = Int.random(in: 1...12)
-                    subtrahend = Int.random(in: 1...12)
-                    
+                    minuend = Int.random(in: 1...144)
+                    subtrahend = Int.random(in: 1...minuend)
+
                     // Reset properties that track what's happening with the current question
                     answerChecked = false
                     answerCorrect = false
@@ -128,6 +128,10 @@ struct SubtractionView: View {
         }
         .padding(.horizontal)
         .font(.system(size: 72))
+        // Closure will run once when the view is first loaded
+        .task {
+            subtrahend = Int.random(in: 1...minuend)
+        }
         
         
     }
