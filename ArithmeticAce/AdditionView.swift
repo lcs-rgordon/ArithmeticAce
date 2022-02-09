@@ -118,6 +118,10 @@ struct AdditionView: View {
                 
             }
             
+            // Animation!
+            LottieView(animationNamed: "51926-happy")
+                .opacity(answerCorrect == true ? 1.0 : 0.0)
+                .padding()
             
             
             Spacer()
