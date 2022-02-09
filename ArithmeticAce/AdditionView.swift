@@ -23,7 +23,7 @@ struct AdditionView: View {
     @State var answerCorrect = false
     
     // MARK: Computed properties
-    // What is the correct product?
+    // What is the correct sum?
     var correctSum: Int {
         return augend + addend
     }
