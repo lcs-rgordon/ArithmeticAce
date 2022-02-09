@@ -46,6 +46,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8113965927B3D7CC00E5B829 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8113965A27B3D7D900E5B829 /* Helpers */,
+				81BE3A9327B2DAE800880E99 /* AdditionView.swift */,
+				8113965727B3D32100E5B829 /* SubtractionView.swift */,
+				81FDA62D27B160FF002471AE /* MultiplicationView.swift */,
+				812B4B6327B319C5003A469B /* DivisionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8113965A27B3D7D900E5B829 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				812B4B6F27B3467C003A469B /* LottieView.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		81FDA61F27B160FF002471AE = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +86,11 @@
 			isa = PBXGroup;
 			children = (
 				81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */,
-				81BE3A9327B2DAE800880E99 /* AdditionView.swift */,
-				8113965727B3D32100E5B829 /* SubtractionView.swift */,
-				81FDA62D27B160FF002471AE /* MultiplicationView.swift */,
-				812B4B6327B319C5003A469B /* DivisionView.swift */,
+				8113965927B3D7CC00E5B829 /* Views */,
 				812B4B7127B346D7003A469B /* 7393-fireworks.json */,
 				8113965527B3474400E5B829 /* 51926-happy.json */,
 				81FDA62F27B16100002471AE /* Assets.xcassets */,
 				81FDA63127B16100002471AE /* Preview Content */,
-				812B4B6F27B3467C003A469B /* LottieView.swift */,
 			);
 			path = ArithmeticAce;
 			sourceTree = "<group>";
