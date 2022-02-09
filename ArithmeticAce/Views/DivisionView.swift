@@ -38,26 +38,9 @@ struct DivisionView: View {
             
             Divider()
             
-            HStack {
-                ZStack {
-                    Image(systemName: "checkmark.circle")
-                        .foregroundColor(.green)
-                    //        CONDITION      true  false
-                        .opacity(answerCorrect == true ? 1.0 : 0.0)
-                    
-                    Image(systemName: "x.square")
-                        .foregroundColor(.red)
-                    //        CONDITION1         AND     CONDITION2         true  false
-                    //       answerChecked = true     answerCorrect = false
-                        .opacity(answerChecked == true && answerCorrect == false ? 1.0 : 0.0)
-                    
-                    
-                }
-                Spacer()
-                TextField("",
-                          text: $inputGiven)
-                    .multilineTextAlignment(.trailing)
-            }
+            AnswerAndResultView(inputGiven: $inputGiven,
+                                answerChecked: $answerChecked,
+                                answerCorrect: $answerCorrect)
             
             ZStack {
                 

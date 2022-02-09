@@ -10,6 +10,7 @@
 		8113965627B3474400E5B829 /* 51926-happy.json in Resources */ = {isa = PBXBuildFile; fileRef = 8113965527B3474400E5B829 /* 51926-happy.json */; };
 		8113965827B3D32100E5B829 /* SubtractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113965727B3D32100E5B829 /* SubtractionView.swift */; };
 		8113965C27B3D80C00E5B829 /* QuestionPresentationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113965B27B3D80C00E5B829 /* QuestionPresentationView.swift */; };
+		8113965E27B3DBB200E5B829 /* AnswerAndResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113965D27B3DBB200E5B829 /* AnswerAndResultView.swift */; };
 		812B4B6427B319C5003A469B /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6327B319C5003A469B /* DivisionView.swift */; };
 		812B4B6E27B34665003A469B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 812B4B6D27B34665003A469B /* Lottie */; };
 		812B4B7027B3467C003A469B /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6F27B3467C003A469B /* LottieView.swift */; };
@@ -25,6 +26,7 @@
 		8113965527B3474400E5B829 /* 51926-happy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "51926-happy.json"; sourceTree = "<group>"; };
 		8113965727B3D32100E5B829 /* SubtractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionView.swift; sourceTree = "<group>"; };
 		8113965B27B3D80C00E5B829 /* QuestionPresentationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionPresentationView.swift; sourceTree = "<group>"; };
+		8113965D27B3DBB200E5B829 /* AnswerAndResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerAndResultView.swift; sourceTree = "<group>"; };
 		812B4B6327B319C5003A469B /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 		812B4B6F27B3467C003A469B /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		812B4B7127B346D7003A469B /* 7393-fireworks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "7393-fireworks.json"; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 			children = (
 				812B4B6F27B3467C003A469B /* LottieView.swift */,
 				8113965B27B3D80C00E5B829 /* QuestionPresentationView.swift */,
+				8113965D27B3DBB200E5B829 /* AnswerAndResultView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81FDA62E27B160FF002471AE /* MultiplicationView.swift in Sources */,
+				8113965E27B3DBB200E5B829 /* AnswerAndResultView.swift in Sources */,
 				8113965C27B3D80C00E5B829 /* QuestionPresentationView.swift in Sources */,
 				812B4B6427B319C5003A469B /* DivisionView.swift in Sources */,
 				812B4B7027B3467C003A469B /* LottieView.swift in Sources */,
