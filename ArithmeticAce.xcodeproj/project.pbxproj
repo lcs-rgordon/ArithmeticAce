@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8113965627B3474400E5B829 /* 51926-happy.json in Resources */ = {isa = PBXBuildFile; fileRef = 8113965527B3474400E5B829 /* 51926-happy.json */; };
+		8113965827B3D32100E5B829 /* SubtractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113965727B3D32100E5B829 /* SubtractionView.swift */; };
 		812B4B6427B319C5003A469B /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6327B319C5003A469B /* DivisionView.swift */; };
 		812B4B6E27B34665003A469B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 812B4B6D27B34665003A469B /* Lottie */; };
 		812B4B7027B3467C003A469B /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6F27B3467C003A469B /* LottieView.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		8113965527B3474400E5B829 /* 51926-happy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "51926-happy.json"; sourceTree = "<group>"; };
+		8113965727B3D32100E5B829 /* SubtractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtractionView.swift; sourceTree = "<group>"; };
 		812B4B6327B319C5003A469B /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 		812B4B6F27B3467C003A469B /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		812B4B7127B346D7003A469B /* 7393-fireworks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "7393-fireworks.json"; sourceTree = "<group>"; };
@@ -65,8 +67,9 @@
 			children = (
 				81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */,
 				81BE3A9327B2DAE800880E99 /* AdditionView.swift */,
-				812B4B6327B319C5003A469B /* DivisionView.swift */,
+				8113965727B3D32100E5B829 /* SubtractionView.swift */,
 				81FDA62D27B160FF002471AE /* MultiplicationView.swift */,
+				812B4B6327B319C5003A469B /* DivisionView.swift */,
 				812B4B7127B346D7003A469B /* 7393-fireworks.json */,
 				8113965527B3474400E5B829 /* 51926-happy.json */,
 				81FDA62F27B16100002471AE /* Assets.xcassets */,
@@ -167,6 +170,7 @@
 				812B4B7027B3467C003A469B /* LottieView.swift in Sources */,
 				81FDA62C27B160FF002471AE /* ArithmeticAceApp.swift in Sources */,
 				81BE3A9427B2DAE800880E99 /* AdditionView.swift in Sources */,
+				8113965827B3D32100E5B829 /* SubtractionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

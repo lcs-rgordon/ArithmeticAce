@@ -18,7 +18,7 @@ struct ArithmeticAceApp: App {
                         Text("Add")
                     }
 
-                AdditionView()
+                SubtractionView()
                     .tabItem {
                         Image(systemName: "minus.circle")
                         Text("Subtract")
