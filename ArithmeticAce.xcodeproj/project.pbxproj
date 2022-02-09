@@ -13,6 +13,7 @@
 		8113965E27B3DBB200E5B829 /* AnswerAndResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113965D27B3DBB200E5B829 /* AnswerAndResultView.swift */; };
 		8113966027B3E1F200E5B829 /* CheckAnswerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113965F27B3E1F200E5B829 /* CheckAnswerButtonView.swift */; };
 		8113966327B3E4D200E5B829 /* 91726-sad-guy-is-walking.json in Resources */ = {isa = PBXBuildFile; fileRef = 8113966227B3E4D200E5B829 /* 91726-sad-guy-is-walking.json */; };
+		8113966527B3E5C100E5B829 /* ReactionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113966427B3E5C100E5B829 /* ReactionAnimationView.swift */; };
 		812B4B6427B319C5003A469B /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6327B319C5003A469B /* DivisionView.swift */; };
 		812B4B6E27B34665003A469B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 812B4B6D27B34665003A469B /* Lottie */; };
 		812B4B7027B3467C003A469B /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6F27B3467C003A469B /* LottieView.swift */; };
@@ -30,6 +31,7 @@
 		8113965D27B3DBB200E5B829 /* AnswerAndResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerAndResultView.swift; sourceTree = "<group>"; };
 		8113965F27B3E1F200E5B829 /* CheckAnswerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnswerButtonView.swift; sourceTree = "<group>"; };
 		8113966227B3E4D200E5B829 /* 91726-sad-guy-is-walking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "91726-sad-guy-is-walking.json"; sourceTree = "<group>"; };
+		8113966427B3E5C100E5B829 /* ReactionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionAnimationView.swift; sourceTree = "<group>"; };
 		812B4B6327B319C5003A469B /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 		812B4B6F27B3467C003A469B /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		81BE3A9327B2DAE800880E99 /* AdditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				8113965B27B3D80C00E5B829 /* QuestionPresentationView.swift */,
 				8113965D27B3DBB200E5B829 /* AnswerAndResultView.swift */,
 				8113965F27B3E1F200E5B829 /* CheckAnswerButtonView.swift */,
+				8113966427B3E5C100E5B829 /* ReactionAnimationView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8113966527B3E5C100E5B829 /* ReactionAnimationView.swift in Sources */,
 				81FDA62E27B160FF002471AE /* MultiplicationView.swift in Sources */,
 				8113965E27B3DBB200E5B829 /* AnswerAndResultView.swift in Sources */,
 				8113965C27B3D80C00E5B829 /* QuestionPresentationView.swift in Sources */,

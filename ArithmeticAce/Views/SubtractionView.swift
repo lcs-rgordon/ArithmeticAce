@@ -71,21 +71,9 @@ struct SubtractionView: View {
                 
             }
             
-            // Reaction animation
-            ZStack {
-                
-                // Correct animation
-                LottieView(animationNamed: "51926-happy")
-                    .opacity(answerCorrect == true ? 1.0 : 0.0)
-                    .padding()
+            ReactionAnimationView(answerCorrect: $answerCorrect,
+                                  answerChecked: $answerChecked)
 
-                // Incorrect animation
-                LottieView(animationNamed: "91726-sad-guy-is-walking")
-                    .opacity(answerChecked == true && answerCorrect == false ? 1.0 : 0.0)
-                    .padding()
-                
-            }
-            
             Spacer()
         }
         .padding(.horizontal)
