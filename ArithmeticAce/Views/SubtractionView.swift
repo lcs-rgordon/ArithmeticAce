@@ -22,6 +22,9 @@ struct SubtractionView: View {
     // Was the answer given actually correct?
     @State var answerCorrect = false
     
+    // Tracks the history of responses
+    @State var history: [QuestionResult] = []
+    
     // MARK: Computed properties
     // What is the correct difference?
     var correctDifference: Int {
@@ -44,11 +47,15 @@ struct SubtractionView: View {
             
             ZStack {
                 
-                CheckAnswerButtonView(inputGiven: $inputGiven,
+                CheckAnswerButtonView(firstValue: minuend,
+                                      secondValue: subtrahend,
+                                      operation: .subtraction,
+                                      inputGiven: $inputGiven,
                                       answerChecked: $answerChecked,
                                       answerCorrect: $answerCorrect,
-                                      correctResponse: correctDifference)
-                
+                                      correctResponse: correctDifference,
+                                      history: $history)
+
                 Button(action: {
                     // Generate a new question
                     minuend = Int.random(in: 1...144)

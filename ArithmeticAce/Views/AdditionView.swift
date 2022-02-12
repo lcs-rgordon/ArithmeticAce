@@ -22,6 +22,9 @@ struct AdditionView: View {
     // Was the answer given actually correct?
     @State var answerCorrect = false
     
+    // Tracks the history of responses
+    @State var history: [QuestionResult] = []
+    
     // MARK: Computed properties
     // What is the correct sum?
     var correctSum: Int {
@@ -43,11 +46,16 @@ struct AdditionView: View {
                                 answerCorrect: $answerCorrect)
             
             ZStack {
-                
-                CheckAnswerButtonView(inputGiven: $inputGiven,
+                                
+                CheckAnswerButtonView(firstValue: augend,
+                                      secondValue: addend,
+                                      operation: .addition,
+                                      inputGiven: $inputGiven,
                                       answerChecked: $answerChecked,
                                       answerCorrect: $answerCorrect,
-                                      correctResponse: correctSum)
+                                      correctResponse: correctSum,
+                                      history: $history)
+
 
                 Button(action: {
                     // Generate a new question
@@ -70,7 +78,7 @@ struct AdditionView: View {
                     .opacity(answerChecked == true ? 1.0 : 0.0)
                 
             }
-
+            
             ReactionAnimationView(answerCorrect: $answerCorrect,
                                   answerChecked: $answerChecked)
             

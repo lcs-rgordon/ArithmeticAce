@@ -22,6 +22,9 @@ struct DivisionView: View {
     // Was the answer given actually correct?
     @State var answerCorrect = false
     
+    // Tracks the history of responses
+    @State var history: [QuestionResult] = []
+    
     // MARK: Computed properties
     // What is the dividend, based on the randomly generated divisor and quotient?
     var dividend: Int {
@@ -44,10 +47,14 @@ struct DivisionView: View {
             
             ZStack {
                 
-                CheckAnswerButtonView(inputGiven: $inputGiven,
+                CheckAnswerButtonView(firstValue: dividend,
+                                      secondValue: divisor,
+                                      operation: .division,
+                                      inputGiven: $inputGiven,
                                       answerChecked: $answerChecked,
                                       answerCorrect: $answerCorrect,
-                                      correctResponse: correctQuotient)
+                                      correctResponse: correctQuotient,
+                                      history: $history)
 
                 Button(action: {
                     // Generate a new question

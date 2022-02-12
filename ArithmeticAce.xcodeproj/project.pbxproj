@@ -14,6 +14,8 @@
 		8113966027B3E1F200E5B829 /* CheckAnswerButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113965F27B3E1F200E5B829 /* CheckAnswerButtonView.swift */; };
 		8113966327B3E4D200E5B829 /* 91726-sad-guy-is-walking.json in Resources */ = {isa = PBXBuildFile; fileRef = 8113966227B3E4D200E5B829 /* 91726-sad-guy-is-walking.json */; };
 		8113966527B3E5C100E5B829 /* ReactionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8113966427B3E5C100E5B829 /* ReactionAnimationView.swift */; };
+		8127BD1227B7ECAB00D73CE3 /* QuestionResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8127BD1127B7ECAB00D73CE3 /* QuestionResult.swift */; };
+		8127BD1427B7ECC700D73CE3 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8127BD1327B7ECC700D73CE3 /* Operation.swift */; };
 		812B4B6427B319C5003A469B /* DivisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6327B319C5003A469B /* DivisionView.swift */; };
 		812B4B6E27B34665003A469B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 812B4B6D27B34665003A469B /* Lottie */; };
 		812B4B7027B3467C003A469B /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812B4B6F27B3467C003A469B /* LottieView.swift */; };
@@ -32,6 +34,8 @@
 		8113965F27B3E1F200E5B829 /* CheckAnswerButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckAnswerButtonView.swift; sourceTree = "<group>"; };
 		8113966227B3E4D200E5B829 /* 91726-sad-guy-is-walking.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "91726-sad-guy-is-walking.json"; sourceTree = "<group>"; };
 		8113966427B3E5C100E5B829 /* ReactionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactionAnimationView.swift; sourceTree = "<group>"; };
+		8127BD1127B7ECAB00D73CE3 /* QuestionResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionResult.swift; sourceTree = "<group>"; };
+		8127BD1327B7ECC700D73CE3 /* Operation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
 		812B4B6327B319C5003A469B /* DivisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DivisionView.swift; sourceTree = "<group>"; };
 		812B4B6F27B3467C003A469B /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		81BE3A9327B2DAE800880E99 /* AdditionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,15 @@
 			path = Animations;
 			sourceTree = "<group>";
 		};
+		8127BD1027B7EC9000D73CE3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8127BD1127B7ECAB00D73CE3 /* QuestionResult.swift */,
+				8127BD1327B7ECC700D73CE3 /* Operation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		81FDA61F27B160FF002471AE = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +121,7 @@
 			children = (
 				81FDA62B27B160FF002471AE /* ArithmeticAceApp.swift */,
 				8113966127B3E4BE00E5B829 /* Animations */,
+				8127BD1027B7EC9000D73CE3 /* Model */,
 				8113965927B3D7CC00E5B829 /* Views */,
 				81FDA62F27B16100002471AE /* Assets.xcassets */,
 				81FDA63127B16100002471AE /* Preview Content */,
@@ -204,6 +218,7 @@
 				8113966527B3E5C100E5B829 /* ReactionAnimationView.swift in Sources */,
 				81FDA62E27B160FF002471AE /* MultiplicationView.swift in Sources */,
 				8113965E27B3DBB200E5B829 /* AnswerAndResultView.swift in Sources */,
+				8127BD1227B7ECAB00D73CE3 /* QuestionResult.swift in Sources */,
 				8113965C27B3D80C00E5B829 /* QuestionPresentationView.swift in Sources */,
 				812B4B6427B319C5003A469B /* DivisionView.swift in Sources */,
 				8113966027B3E1F200E5B829 /* CheckAnswerButtonView.swift in Sources */,
@@ -211,6 +226,7 @@
 				81FDA62C27B160FF002471AE /* ArithmeticAceApp.swift in Sources */,
 				81BE3A9427B2DAE800880E99 /* AdditionView.swift in Sources */,
 				8113965827B3D32100E5B829 /* SubtractionView.swift in Sources */,
+				8127BD1427B7ECC700D73CE3 /* Operation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,6 +22,9 @@ struct MultiplicationView: View {
     // Was the answer given actually correct?
     @State var answerCorrect = false
     
+    // Tracks the history of responses
+    @State var history: [QuestionResult] = []
+    
     // MARK: Computed properties
     // What is the correct product?
     var correctProduct: Int {
@@ -43,10 +46,14 @@ struct MultiplicationView: View {
                         
             ZStack {
                 
-                CheckAnswerButtonView(inputGiven: $inputGiven,
+                CheckAnswerButtonView(firstValue: multiplicand,
+                                      secondValue: multiplier,
+                                      operation: .multiplication,
+                                      inputGiven: $inputGiven,
                                       answerChecked: $answerChecked,
                                       answerCorrect: $answerCorrect,
-                                      correctResponse: correctProduct)
+                                      correctResponse: correctProduct,
+                                      history: $history)
 
                 Button(action: {
                     // Generate a new question
