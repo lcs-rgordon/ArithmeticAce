@@ -48,13 +48,13 @@ struct MultiplicationView: View {
                 ZStack {
                     Image(systemName: "checkmark.circle")
                         .foregroundColor(.green)
-                    //        CONDITION      true  false
+                        //        CONDITION      true  false
                         .opacity(answerCorrect == true ? 1.0 : 0.0)
                     
                     Image(systemName: "x.square")
                         .foregroundColor(.red)
-                    //        CONDITION1         AND     CONDITION2         true  false
-                    //       answerChecked = true     answerCorrect = false
+                        //        CONDITION1         AND     CONDITION2         true  false
+                        //       answerChecked = true     answerCorrect = false
                         .opacity(answerChecked == true && answerCorrect == false ? 1.0 : 0.0)
                     
                     
@@ -113,7 +113,7 @@ struct MultiplicationView: View {
                 })
                     .padding()
                     .buttonStyle(.bordered)
-                // Only show this button when an answer has been checked
+                    // Only show this button when an answer has been checked
                     .opacity(answerChecked == true ? 1.0 : 0.0)
                 
             }
