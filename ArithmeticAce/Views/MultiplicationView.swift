@@ -41,15 +41,15 @@ struct MultiplicationView: View {
             Divider()
             
             AnswerAndResultView(inputGiven: $inputGiven,
-                                answerChecked: $answerChecked,
-                                answerCorrect: $answerCorrect)
+                                answerChecked: answerChecked,
+                                answerCorrect: answerCorrect)
                         
             ZStack {
                 
                 CheckAnswerButtonView(firstValue: multiplicand,
                                       secondValue: multiplier,
                                       operation: .multiplication,
-                                      inputGiven: $inputGiven,
+                                      inputGiven: inputGiven,
                                       answerChecked: $answerChecked,
                                       answerCorrect: $answerCorrect,
                                       correctResponse: correctProduct,
@@ -77,8 +77,8 @@ struct MultiplicationView: View {
                 
             }
             
-            ReactionAnimationView(answerCorrect: $answerCorrect,
-                                  answerChecked: $answerChecked)
+            ReactionAnimationView(answerCorrect: answerCorrect,
+                                  answerChecked: answerChecked)
 
             Spacer()
         }

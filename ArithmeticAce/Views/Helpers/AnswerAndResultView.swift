@@ -14,8 +14,8 @@ struct AnswerAndResultView: View {
     // Each derived value we need is marked with @Binding
     // These match up directly with the source of truth in the originating view, which is marked with @State
     @Binding var inputGiven: String
-    @Binding var answerChecked: Bool
-    @Binding var answerCorrect: Bool
+    let answerChecked: Bool
+    let answerCorrect: Bool
 
     // MARK: Computed property
     var body: some View {
@@ -47,7 +47,7 @@ struct AnswerAndResultView: View {
 struct AnswerAndResultView_Previews: PreviewProvider {
     static var previews: some View {
         AnswerAndResultView(inputGiven: .constant(""),
-                            answerChecked: .constant(false),
-                            answerCorrect: .constant(false))
+                            answerChecked: false,
+                            answerCorrect: false)
     }
 }

@@ -10,9 +10,9 @@ import SwiftUI
 struct QuestionPresentationView: View {
     
     // MARK: Stored properies
-    var operation: String
-    var firstValue: Int
-    var secondValue: Int
+    let operation: String
+    let firstValue: Int
+    let secondValue: Int
     
     // MARK: Computed property
     var body: some View {

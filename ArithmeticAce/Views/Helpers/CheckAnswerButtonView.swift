@@ -13,7 +13,7 @@ struct CheckAnswerButtonView: View {
     let firstValue: Int
     let secondValue: Int
     let operation: Operation
-    @Binding var inputGiven: String
+    let inputGiven: String
     @Binding var answerChecked: Bool
     @Binding var answerCorrect: Bool
     
@@ -82,7 +82,7 @@ struct CheckAnswerButtonView_Previews: PreviewProvider {
         CheckAnswerButtonView(firstValue: 7,
                               secondValue: 8,
                               operation: .multiplication,
-                              inputGiven: .constant(""),
+                              inputGiven: "",
                               answerChecked: .constant(true),
                               answerCorrect: .constant(true),
                               correctResponse: 56,

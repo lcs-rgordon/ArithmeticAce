@@ -42,15 +42,15 @@ struct AdditionView: View {
             Divider()
             
             AnswerAndResultView(inputGiven: $inputGiven,
-                                answerChecked: $answerChecked,
-                                answerCorrect: $answerCorrect)
+                                answerChecked: answerChecked,
+                                answerCorrect: answerCorrect)
             
             ZStack {
                                 
                 CheckAnswerButtonView(firstValue: augend,
                                       secondValue: addend,
                                       operation: .addition,
-                                      inputGiven: $inputGiven,
+                                      inputGiven: inputGiven,
                                       answerChecked: $answerChecked,
                                       answerCorrect: $answerCorrect,
                                       correctResponse: correctSum,
@@ -79,8 +79,8 @@ struct AdditionView: View {
                 
             }
             
-            ReactionAnimationView(answerCorrect: $answerCorrect,
-                                  answerChecked: $answerChecked)
+            ReactionAnimationView(answerCorrect: answerCorrect,
+                                  answerChecked: answerChecked)
             
             Spacer()
         }

@@ -10,8 +10,8 @@ import SwiftUI
 struct ReactionAnimationView: View {
     
     // MARK: Stored properties
-    @Binding var answerCorrect: Bool
-    @Binding var answerChecked: Bool
+    let answerCorrect: Bool
+    let answerChecked: Bool
     
     // MARK: Computed property
     var body: some View {
@@ -38,11 +38,11 @@ struct ReactionAnimationView_Previews: PreviewProvider {
     static var previews: some View {
         
         // Correct answer condition
-        ReactionAnimationView(answerCorrect: .constant(true),
-                              answerChecked: .constant(true))
+        ReactionAnimationView(answerCorrect: true,
+                              answerChecked: true)
         
         // Incorect answer condition
-        ReactionAnimationView(answerCorrect: .constant(false),
-                              answerChecked: .constant(true))
+        ReactionAnimationView(answerCorrect: true,
+                              answerChecked: true)
     }
 }

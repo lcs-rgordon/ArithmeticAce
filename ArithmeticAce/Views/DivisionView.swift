@@ -42,15 +42,15 @@ struct DivisionView: View {
             Divider()
             
             AnswerAndResultView(inputGiven: $inputGiven,
-                                answerChecked: $answerChecked,
-                                answerCorrect: $answerCorrect)
+                                answerChecked: answerChecked,
+                                answerCorrect: answerCorrect)
             
             ZStack {
                 
                 CheckAnswerButtonView(firstValue: dividend,
                                       secondValue: divisor,
                                       operation: .division,
-                                      inputGiven: $inputGiven,
+                                      inputGiven: inputGiven,
                                       answerChecked: $answerChecked,
                                       answerCorrect: $answerCorrect,
                                       correctResponse: correctQuotient,
@@ -78,8 +78,8 @@ struct DivisionView: View {
                 
             }
             
-            ReactionAnimationView(answerCorrect: $answerCorrect,
-                                  answerChecked: $answerChecked)
+            ReactionAnimationView(answerCorrect: answerCorrect,
+                                  answerChecked: answerChecked)
 
             Spacer()
         }
