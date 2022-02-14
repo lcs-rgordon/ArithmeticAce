@@ -11,11 +11,12 @@ struct AnswerAndResultView: View {
     
     // MARK: Stored properties
 
-    // Each derived value we need is marked with @Binding
-    // These match up directly with the source of truth in the originating view, which is marked with @State
-    @Binding var inputGiven: String
-    let answerChecked: Bool
-    let answerCorrect: Bool
+    // All of these are considered "derived values".
+    // These match up directly with the sources of truth
+    // in the originating view.
+    @Binding var inputGiven: String // changes, so @Binding
+    let answerChecked: Bool         // not updated, so regular property (let)
+    let answerCorrect: Bool         // not updated, so regular property (let)
 
     // MARK: Computed property
     var body: some View {
